@@ -1,1 +1,2 @@
-*  @github/communities-oss-reviewers
+docker run -d -p 5432:5432 --name postgis-db -e POSTGRES_PASSWORD=root -d mdillon/postgis
+docker exec -it postgis-db sh -c 'exec psql -U postgres'*  @github/communities-oss-reviewers
